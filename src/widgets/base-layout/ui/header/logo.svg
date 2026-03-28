@@ -1,0 +1,56 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="strokeGrad" x1="120" y1="60" x2="1060" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34D4FF"/>
+      <stop offset="0.5" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#C86BFF"/>
+    </linearGradient>
+    <linearGradient id="iconInner" x1="120" y1="80" x2="430" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="playGrad" x1="200" y1="120" x2="310" y2="245" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74E7FF"/>
+      <stop offset="1" stop-color="#2DA7FF"/>
+    </linearGradient>
+    <linearGradient id="wordGrad" x1="480" y1="90" x2="900" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FE7FF"/>
+      <stop offset="0.55" stop-color="#59C7FF"/>
+      <stop offset="1" stop-color="#B58DFF"/>
+    </linearGradient>
+    <linearGradient id="pillGrad" x1="470" y1="185" x2="1030" y2="295" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#D8E2F7"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+                     values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.24 0" result="glow"/>
+      <feBlend in="SourceGraphic" in2="glow" mode="screen"/>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softGlow)">
+    <rect x="88" y="68" width="370" height="224" rx="54" fill="url(#iconInner)" stroke="url(#strokeGrad)" stroke-width="10"/>
+    <rect x="106" y="86" width="334" height="188" rx="42" fill="url(#iconInner)" fill-opacity="0.72"/>
+    <path d="M229 132.5C229 121.7 240.7 114.97 250.03 120.41L337.66 171.52C346.87 176.89 346.87 190.11 337.66 195.48L250.03 246.59C240.7 252.03 229 245.3 229 234.5V132.5Z"
+          fill="url(#playGrad)"/>
+    <path d="M229 132.5C229 121.7 240.7 114.97 250.03 120.41L337.66 171.52C346.87 176.89 346.87 190.11 337.66 195.48L250.03 246.59C240.7 252.03 229 245.3 229 234.5V132.5Z"
+          stroke="#B8F2FF" stroke-opacity="0.55" stroke-width="8"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <text x="500" y="235"
+          font-family="Inter, Arial, Helvetica, sans-serif"
+          font-size="170"
+          font-weight="800"
+          letter-spacing="2"
+          fill="url(#wordGrad)">VIDEO</text>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+.leftSideBar {
+    border-right: 1px solid #cbcbcb;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
