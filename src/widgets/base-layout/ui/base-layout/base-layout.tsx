@@ -11,7 +11,7 @@ interface BaseLayoutProps {
 export const BasicLayout: React.FC<BaseLayoutProps> = ({ children }) => {
   return (
     <div className={s.container}>
-      <Header />
+      <Header profileId={'123'}/>
       <LeftSideBar />
       {children}
     </div>

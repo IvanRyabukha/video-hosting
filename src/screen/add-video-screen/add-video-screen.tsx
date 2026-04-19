@@ -53,7 +53,7 @@ export const AddVideoScreen = () => {
 
   const [videoId, setVideoId] = useState('');
 
-  const onSubmit = (data: Inputs) => {
+  const onSubmit = async (data: Inputs) => {
     const url = new URL(data.videoUrl);
 
     const videoId = parseYoutubeUrl(url);
@@ -61,6 +61,18 @@ export const AddVideoScreen = () => {
     if (!videoId) return;
 
     setVideoId(videoId);
+
+    await fetch('/api/videos', {
+      method: 'POST',
+      body: JSON.stringify({ videoId }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    await fetch('/api/videos', {
+      method: "GET"
+    });
   };
 
   console.log('errors', errors);

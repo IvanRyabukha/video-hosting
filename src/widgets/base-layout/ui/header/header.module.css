@@ -1,8 +1,7 @@
 .header {
-  border-bottom: 1px solid #cbcbcb;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
 }
 
 .logo {
@@ -12,4 +11,51 @@
 
   width: 180px;
   height: 42px;
+}
+
+.createLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  max-width: 111px;
+  height: 35px;
+  border-radius: 18px;
+  padding: 0 16px;
+
+  font-size: 14px;
+
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.profileLink {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: gray;
+  border-radius: 50%;
+
+
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #bbbbbb;
+  }
+
+  .hidden {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.rightSide {
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }

@@ -1,8 +1,32 @@
 .leftSideBar {
-    border-right: 1px solid #cbcbcb;
+  padding: 12px;
 }
 
 .nav {
-    display: flex;
-    flex-direction: column;
+  flex-direction: column;
+  display: flex;
+}
+
+.link {
+  height: 40px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+
+  font-size: 14px;
+
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  margin-block: 12px;
 }
