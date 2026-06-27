@@ -12,22 +12,22 @@ export const LeftSideBar = () => {
           href={'/'}
           className={s.link}
         >
-          <Home size={24} aria-hidden/>
+          <Home size={24} strokeWidth={1.5} aria-hidden />
           Home
         </Link>
         <Link href={'/profile/123'} className={s.link}>
-          <CircleUserRoundIcon size={24} aria-hidden/>
+          <CircleUserRoundIcon size={24} strokeWidth={1.5} aria-hidden/>
           Profile
         </Link>
 
         <div className={s.divider}/>
 
         <Link href={'/editor/add-video'} className={s.link}>
-          <LayersPlusIcon size={24} aria-hidden/>
+          <LayersPlusIcon size={24} strokeWidth={1.5} aria-hidden/>
           Add video
         </Link>
         <Link href={'/profile/123'} className={s.link}>
-          <LucideTvMinimalPlay size={24} aria-hidden/>
+          <LucideTvMinimalPlay size={24} strokeWidth={1.5} aria-hidden/>
           Your videos
         </Link>
       </nav>
